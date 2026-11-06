@@ -1,0 +1,35 @@
+{
+  "lines": 10000,
+  "linked_units": 100,
+  "cold": {
+    "compiled": 100,
+    "cached": 0,
+    "linked_functions": 100,
+    "milliseconds": 178.8645640000368,
+    "backend": "EmberC custom lexer/parser/WASM linker/DWARF encoder"
+  },
+  "warm": {
+    "compiled": 0,
+    "cached": 100,
+    "linked_functions": 100,
+    "milliseconds": 29.387684000028003,
+    "backend": "EmberC custom lexer/parser/WASM linker/DWARF encoder"
+  },
+  "local_edit": {
+    "compiled": 1,
+    "cached": 99,
+    "linked_functions": 100,
+    "milliseconds": 35.85375599999452,
+    "backend": "EmberC custom lexer/parser/WASM linker/DWARF encoder"
+  },
+  "custom_dwarf_verified": true,
+  "source_breakpoint": {
+    "breakpoint_hit": true,
+    "wasm_byte_offset": 68820,
+    "result": 192,
+    "source": "u0.c",
+    "line": 99,
+    "dwarf_address": 68688
+  },
+  "native_clang_match": true
+}

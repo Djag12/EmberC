@@ -1,0 +1,8 @@
+{
+  "breakpoint_hit": true,
+  "wasm_byte_offset": 184,
+  "result": 50,
+  "source": "debug.c",
+  "line": 6,
+  "dwarf_address": 108
+}

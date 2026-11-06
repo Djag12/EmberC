@@ -1,0 +1,30 @@
+{
+  "source_lines": 10000,
+  "linked_units": 100,
+  "cold": {
+    "compiled": 100,
+    "cached": 0,
+    "linked": true,
+    "milliseconds": 2893.1037790000005,
+    "backend": "Clang C17 + wasm-ld"
+  },
+  "warm": {
+    "compiled": 0,
+    "cached": 100,
+    "linked": false,
+    "milliseconds": 76.88060899999982,
+    "backend": "Clang C17 + wasm-ld"
+  },
+  "local_edit": {
+    "compiled": 1,
+    "cached": 99,
+    "linked": true,
+    "milliseconds": 112.84364599998753,
+    "backend": "Clang C17 + wasm-ld"
+  },
+  "header_invalidation": true,
+  "external_transitive_include_invalidation": true,
+  "dwarf_sections": true,
+  "linked_result": 192,
+  "backend": "Clang C17 + wasm-ld; EmberC orchestrates caching/linking"
+}

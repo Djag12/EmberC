@@ -1,0 +1,23 @@
+{
+  "differential_programs": 2000,
+  "reference": "Clang",
+  "lines": 10000,
+  "independent_modules": 100,
+  "cold": {
+    "compiled": 100,
+    "cached": 0,
+    "elapsed_ms": 157.76336099997934
+  },
+  "no_change": {
+    "compiled": 0,
+    "cached": 100,
+    "elapsed_ms": 22.4016540000207
+  },
+  "local_edit": {
+    "compiled": 1,
+    "cached": 99,
+    "elapsed_ms": 22.326704999954927
+  },
+  "dwarf": true,
+  "full_C17": false
+}

@@ -1,0 +1,9 @@
+{
+  "independent_wasm_modules": 2000,
+  "matched_native_clang": 2000,
+  "generated_families": 8,
+  "seed": 6841,
+  "compiler_path": "Clang-backed EmberC project driver",
+  "oracle": "native Clang",
+  "comparison": "full signed return values"
+}

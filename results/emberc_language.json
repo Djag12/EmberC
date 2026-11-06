@@ -1,0 +1,16 @@
+{
+  "differential_programs": 212,
+  "invalid_programs_rejected": 5,
+  "reference": "clang-18",
+  "features": [
+    "for",
+    "do while",
+    "nested break/continue",
+    "prefix/postfix increment",
+    "compound assignment",
+    "bitwise",
+    "shift",
+    "side-effect short circuit"
+  ],
+  "full_C17": false
+}

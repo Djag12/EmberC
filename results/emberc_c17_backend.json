@@ -1,0 +1,30 @@
+{
+  "backend": "Clang C17 + wasm-ld, not custom frontend",
+  "native_reference": "GCC",
+  "result": 72,
+  "dwarf_verified": true,
+  "features": [
+    "pointers",
+    "arrays",
+    "structs",
+    "unions",
+    "enum",
+    "typedef",
+    "unsigned arithmetic",
+    "64-bit integers",
+    "floating point",
+    "globals",
+    "function pointers",
+    "preprocessor",
+    "switch",
+    "_Static_assert",
+    "_Generic"
+  ],
+  "build": {
+    "compiled": 1,
+    "cached": 0,
+    "linked": true,
+    "milliseconds": 90.53275499996971,
+    "backend": "Clang C17 + wasm-ld"
+  }
+}
