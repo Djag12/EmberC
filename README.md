@@ -1,5 +1,8 @@
 # EmberC
 
+**Original project date (from memory):** November 2025  
+**Published on GitHub:** November 6, 2026
+
 EmberC compiles a small integer subset of C to WebAssembly. Its Python frontend parses functions and control flow, and the linker emits DWARF line information so a debugger can pause on the original C line. A separate driver uses Clang and LLD for broader C17 programs.
 
 ## Run the example
@@ -13,7 +16,3 @@ Run `make test` with GCC, Clang, LLD and the LLVM DWARF tools installed. If your
 The incremental test builds 100 source files, edits a single expression, and runs the result. In the saved run, EmberC reused 99 units and rebuilt the edited unit in a 35.9 ms build. A separate suite compared 2,000 generated integer programs against native Clang. See `results/emberc_custom_project.json` for the build timings and breakpoint result.
 
 Developed with AI assistance.
-
-## Project history
-
-Original project date (from memory): November 2025. This repository was published on November 6, 2026.
