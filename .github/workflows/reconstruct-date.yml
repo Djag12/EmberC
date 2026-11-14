@@ -1,0 +1,32 @@
+name: Document reconstructed project date
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/reconstruct-date.yml]
+permissions:
+  contents: write
+jobs:
+  reconstruct:
+    if: github.event.deleted == false
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Record labeled historical snapshot
+        env:
+          GIT_AUTHOR_NAME: Djag12
+          GIT_AUTHOR_EMAIL: 132848963+Djag12@users.noreply.github.com
+          GIT_COMMITTER_NAME: Djag12
+          GIT_COMMITTER_EMAIL: 132848963+Djag12@users.noreply.github.com
+          GIT_AUTHOR_DATE: "2025-11-01T12:00:00Z"
+          GIT_COMMITTER_DATE: "2025-11-01T12:00:00Z"
+          RECONSTRUCTED_README: "# EmberC\n\n**First published on my previous account (from memory):** November 2025  \n**Republished under Djag12:** November 6, 2026\n\nEmberC compiles a small integer subset of C to WebAssembly. Its Python frontend parses functions and control flow, and the linker emits DWARF line information so a debugger can pause on the original C line. A separate driver uses Clang and LLD for broader C17 programs.\n\n## Run the example\n\nFrom Linux or Ubuntu in WSL with Python 3.10 or newer and Node.js 24, run `make demo`. The example calls a C function in WebAssembly and prints 127. Follow the source from `emberc/examples/functions.c` into `emberc/frontend.py`.\n\n## Check an incremental build\n\nRun `make test` with GCC, Clang, LLD and the LLVM DWARF tools installed. If your LLVM tools have versioned names, set CLANG, WASM_LD and LLVM_DWARFDUMP to the corresponding executables.\n\nThe incremental test builds 100 source files, edits a single expression, and runs the result. In the saved run, EmberC reused 99 units and rebuilt the edited unit in a 35.9 ms build. A separate suite compared 2,000 generated integer programs against native Clang. See `results/emberc_custom_project.json` for the build timings and breakpoint result.\n\nDeveloped with AI assistance.\n\n## Reconstructed history\n\nThis snapshot uses 2025-11-01 as its author and committer date based on my recollection of the original project. Only the month is remembered; the first day is an approximate placeholder. The original Git history was unavailable. This reconstruction was created on November 14, 2026, and does not recover the original individual commits.\n"
+        run: |
+          python3 - <<'PY'
+          import os
+          from pathlib import Path
+          Path('README.md').write_text(os.environ['RECONSTRUCTED_README'])
+          PY
+          git rm .github/workflows/reconstruct-date.yml
+          git add README.md
+          git commit -m "Reconstructed historical snapshot dated 2025-11-01; created November 14, 2026"
+          git push origin HEAD:main
