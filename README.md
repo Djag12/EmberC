@@ -1,8 +1,5 @@
 # EmberC
 
-**First published on my previous account (from memory):** November 2025  
-**Republished under Djag12:** November 6, 2026
-
 EmberC compiles a small integer subset of C to WebAssembly. Its Python frontend parses functions and control flow, and the linker emits DWARF line information so a debugger can pause on the original C line. A separate driver uses Clang and LLD for broader C17 programs.
 
 ## Run the example
