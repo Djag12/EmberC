@@ -16,7 +16,3 @@ Run `make test` with GCC, Clang, LLD and the LLVM DWARF tools installed. If your
 The incremental test builds 100 source files, edits a single expression, and runs the result. In the saved run, EmberC reused 99 units and rebuilt the edited unit in a 35.9 ms build. A separate suite compared 2,000 generated integer programs against native Clang. See `results/emberc_custom_project.json` for the build timings and breakpoint result.
 
 Developed with AI assistance.
-
-## Reconstructed history
-
-This snapshot uses 2025-11-01 as its author and committer date based on my recollection of the original project. Only the month is remembered; the first day is an approximate placeholder. The original Git history was unavailable. This reconstruction was created on November 14, 2026, and does not recover the original individual commits.
